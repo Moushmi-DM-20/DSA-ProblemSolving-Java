@@ -11,7 +11,7 @@ class Main {
         int b = scan.nextInt();
         System.out.print("Enter third Number : ");
         int c = scan.nextInt();
-    int min = Math.min(c, Math.min(a,b));
+        int min = Math.min(c, Math.min(a,b));
         System.out.println("Minimum Number : "+ min);    
     }
 }
