@@ -9,7 +9,7 @@ class Main {
         int b = scan.nextInt();
         System.out.print("Enter height of the Parallelogram :");
         int h = scan.nextInt();
-        double area = b*h;
+        double area = (double)b*h;
         System.out.println("Area of a Parallelogram : "+area);
     }
 }
