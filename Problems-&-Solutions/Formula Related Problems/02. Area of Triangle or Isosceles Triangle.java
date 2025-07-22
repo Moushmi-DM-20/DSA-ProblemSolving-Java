@@ -1,4 +1,4 @@
-//Area Of Triangle
+//Area Of Triangle or Isosceles Triangle
 
 //Solution
 import java.util.*;
