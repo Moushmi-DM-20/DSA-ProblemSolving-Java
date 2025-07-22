@@ -9,7 +9,7 @@ class Main {
         int l = scan.nextInt();
         System.out.print("Enter breadth of the triangle :");
         int b = scan.nextInt();
-        double area = 0.5*l*b;
+        double area = (double)0.5*l*b;
         System.out.println("Area of a triangle : "+area);
     }
 }
