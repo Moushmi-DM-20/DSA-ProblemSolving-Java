@@ -1,0 +1,29 @@
+Qus : 1
+
+#include<stdio.h>
+int main() {
+   int n;
+   for(n = 7; n!=0; n--)
+     printf("n = %d", n--);
+   getchar();
+   return 0;
+}
+
+Output : It will be a infinite loop. The n will never be zero. The value of n be like 7,5,3,1,-1...
+
+Qus : 2
+
+# include <stdio.h>
+# define scanf  "%s Geeks For Geeks "
+main()
+{
+   printf(scanf, scanf);
+   getchar();
+   return 0;
+}
+
+Output : %s Geeks For Geeks Geeks For Geeks
+Explanation : %s is replaced with Geeks For Geeks and remaining printed as having. 
+
+Qus : 3
+
