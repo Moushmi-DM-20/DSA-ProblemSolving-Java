@@ -1,23 +1,26 @@
 // Armstrong Number Check
 
 //Solution
-def getDigitCount(n):
-    r = 0
+def getCount(n):
+    count = 0
     while(n>0):
-        r += 1
+        count+= 1
         n = n//10
-    return r
-def arms_trong(n):
-    r = getDigitCount(n)
+    return count
+    
+def armStrong(num):
+    count = getCount(num)
+    orgVal = num
     value = 0
-    while(n>0):
-        rem = n%10
-        value = value+pow(rem,r)
-        n=n//10
+    while(num>0):
+        rem = num%10
+        value += pow(rem, count)
+        num = num//10
     return value
-output = int(input("Enter a number : "))
-a = arms_trong(output)
-if(a==output):
-    print("Arms")
+    
+inputVal = int(input("Enter a number : "))
+outputVal = armStrong(inputVal)
+if(inputVal == outputVal):
+    print("This is Armstrong")
 else:
-    print("Not Arms")
+    print("This is not Armstrong")
