@@ -22,7 +22,7 @@ def fibo(n):
     if n==1 or n==0:
         return n
     else:
-        for i in range(1,n):
+        for i in range(2,n+1):
            c=a+b
            a = b
            b = c
