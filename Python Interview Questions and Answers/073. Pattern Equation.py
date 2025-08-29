@@ -23,3 +23,12 @@ for i in range(term):
     if i<term-1:
         exp += '+'
 print(f"{exp}+={total}")
+
+#Solution 3 
+num = input("Enter a single digit number : ")
+t1 = num*1
+t2 = num*3
+t3 = num*5
+t4 = num*7
+T = int(t1)+int(t2)+int(t3)+int(t4)
+print(f"{t1}+{t2}+{t3}+{t4}={T}")
