@@ -18,3 +18,12 @@ print(reverseStr(str))
 #Using In-Built
 str = input("Enter a string : ")
 print(''.join(reversed(str)))
+
+#Using recursion
+def reverseStr(s):
+    if len(s)==1:
+        return s
+    return reverseStr(s[1:])+s[0]
+
+str = input("Enter a string : ")
+print(reverseStr(str))
