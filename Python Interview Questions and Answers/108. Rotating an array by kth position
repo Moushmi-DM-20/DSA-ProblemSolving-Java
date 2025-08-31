@@ -1,0 +1,17 @@
+#Rotating an array by Kth position
+
+#Solution
+def leftRot(arr,k):
+    n = len(arr)
+    k = k%n
+    return arr[k:]+arr[:k]
+
+def rightRot(arr,k):
+    n = len(arr)
+    k = k%n
+    return arr[-k:]+arr[:-k]
+    
+arr = list(map(int,input("Enter numbers with spaces : ").split()))
+num = int(input("Enter a number : "))
+print(leftRot(arr,num))
+print(rightRot(arr,num))
